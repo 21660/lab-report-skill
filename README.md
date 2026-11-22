@@ -91,6 +91,28 @@ skills/
     └── SKILL.md
 ```
 
+## English
+
+A Claude Code skill for writing course lab reports on Windows. It makes Claude actually run the experiment, take real screenshots, fill your school's Word template in place, convert to PDF for proofreading, and hand in only what the teacher asked for (report + source code).
+
+Includes working recipes for:
+
+- Word/WPS COM template filling (preserving numbering and avoiding inherited highlight/red text)
+- Generating Chinese reports with python-docx (eastAsia fonts, TOC field, first-page header/footer)
+- Fixing clipped images and dropped table rows in templates
+- DOCX → PDF with Word/WPS COM, including dialog watchdog and TOC flattening
+- Real screenshots via PrintWindow (no window focus needed)
+- Building a clean submission folder
+
+Install:
+
+```
+/plugin marketplace add 21660/lab-report-skill
+/plugin install lab-report@lab-report-skill
+```
+
+The skill's instructions are written in Chinese; the tool recipes (COM calls, Python snippets, commands) are language-agnostic.
+
 ## License
 
 MIT
