@@ -1,6 +1,6 @@
 ---
 name: lab-report
-description: Use when writing a course lab report end to end (实验报告 / lab report / experiment report / fill the report template): check environment, run the experiment for real, take real screenshots, fill the school Word template in place, export PDF to proofread, build the submission folder. Includes Word/WPS COM, python-docx, PrintWindow screenshot and DOCX→PDF recipes. 当用户说"写实验报告""做实验X""填报告模板""交实验"时使用。不用于 ML 研究结果汇报（那走 experiment-report）。
+description: Use when writing a course lab report end to end (实验报告 / lab report / experiment report / fill the report template). Check environment, run the experiment for real, take real screenshots, fill the school Word template in place, export PDF to proofread, build the submission folder. Includes Word/WPS COM, python-docx, PrintWindow screenshot and DOCX to PDF recipes. 当用户说「写实验报告」「做实验X」「填报告模板」「交实验」时使用。不用于 ML 研究结果汇报（那走 experiment-report）。
 ---
 
 # 课程实验报告
