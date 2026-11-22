@@ -1,0 +1,28 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "lab-report-skill",
+  "description": "接单了上百份计算机实验报告后让 Claude Code 总结的实验报告 skill",
+  "owner": {
+    "name": "21660",
+    "url": "https://github.com/21660"
+  },
+  "plugins": [
+    {
+      "name": "lab-report",
+      "source": "./",
+      "description": "课程实验报告全流程：查环境、真跑实验、现场截图、按模板填报告、转 PDF 校版、建提交文件夹。含 Word/WPS COM、python-docx、PrintWindow 截图配方。",
+      "category": "productivity",
+      "keywords": [
+        "实验报告",
+        "lab report",
+        "experiment report",
+        "docx",
+        "word automation",
+        "python-docx",
+        "claude code skill"
+      ],
+      "license": "MIT",
+      "homepage": "https://github.com/21660/lab-report-skill"
+    }
+  ]
+}

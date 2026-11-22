@@ -1,0 +1,10 @@
+{
+  "name": "lab-report",
+  "version": "1.0.0",
+  "description": "课程实验报告全流程 skill：真跑实验、现场截图、按模板填报告、转 PDF、建提交文件夹。",
+  "author": {
+    "name": "21660",
+    "url": "https://github.com/21660"
+  },
+  "license": "MIT"
+}

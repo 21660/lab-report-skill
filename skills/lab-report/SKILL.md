@@ -1,6 +1,6 @@
 ---
 name: lab-report
-description: 课程实验报告全流程：查环境 → 真跑实验 → 现场截图 → 按模板原位填写 → 转 PDF 校版 → 建提交文件夹。含 Word/WPS COM 填模板、python-docx 生成、PrintWindow 截图、DOCX→PDF 的具体调用配方。当用户说"写实验报告""做实验X""填报告模板""交实验"，或给出指导书/任务书/实验模板时使用。不用于 ML 研究结果汇报（那走 experiment-report）。
+description: 课程实验报告全流程：查环境 → 真跑实验 → 现场截图 → 按模板原位填写 → 转 PDF 校版 → 建提交文件夹。含 Word/WPS COM 填模板、python-docx 生成、PrintWindow 截图、DOCX→PDF 的具体调用配方。当用户说"写实验报告""做实验X""填报告模板""交实验"，或英文的 "lab report" / "experiment report" / "fill the report template"，或给出指导书/任务书/实验模板时使用。不用于 ML 研究结果汇报（那走 experiment-report）。
 ---
 
 # 课程实验报告

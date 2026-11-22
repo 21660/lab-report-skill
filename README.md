@@ -4,6 +4,10 @@
 
 不是帮你编报告，而是帮你**真的把实验做完、把真实结果写进去、最后交对东西**。
 
+> A Claude Code skill for course lab reports: run the experiment for real, capture real screenshots, fill the school template, export to PDF for proofreading, and hand in only what the teacher asked for.
+
+**Keywords:** Claude Code skill, lab report, experiment report, 实验报告, docx template, Word COM automation, python-docx, Windows screenshot (PrintWindow), PDF export.
+
 ## 它解决什么问题
 
 每门课的实验报告流程都一样，但每一步都有坑：
@@ -17,19 +21,30 @@
 
 ## 安装
 
+### 方式一：作为插件市场安装（推荐）
+
+在 Claude Code 里：
+
+```
+/plugin marketplace add 21660/lab-report-skill
+/plugin install lab-report@lab-report-skill
+```
+
+装完后重启会话，说「写实验报告」「做实验三」「填报告模板」即可触发。
+
+### 方式二：手动复制
+
 ```bash
 git clone https://github.com/21660/lab-report-skill.git
-cp -r lab-report-skill/lab-report ~/.claude/skills/
+cp -r lab-report-skill/skills/lab-report ~/.claude/skills/
 ```
 
 Windows PowerShell：
 
 ```powershell
 git clone https://github.com/21660/lab-report-skill.git
-Copy-Item -Recurse .\lab-report-skill\lab-report "$env:USERPROFILE\.claude\skills\"
+Copy-Item -Recurse .\lab-report-skill\skills\lab-report "$env:USERPROFILE\.claude\skills\"
 ```
-
-装好后重启 Claude Code，说「写实验报告」「做实验三」「填报告模板」即可触发。
 
 ## 里面有什么
 
@@ -62,14 +77,18 @@ Copy-Item -Recurse .\lab-report-skill\lab-report "$env:USERPROFILE\.claude\skill
 
 ## 适用范围
 
-- 配方全部基于 Windows 11 + Microsoft Office / WPS + Claude Code，macOS/Linux 上流程部分仍可用，COM 与截图部分不适用。
+- 配方全部基于 Windows 11 + Microsoft Office / WPS + Claude Code；macOS/Linux 上流程部分仍可用，COM 与截图部分不适用。
 - 不同学校模板差别很大，填模板前先量实际版心宽度。
 
 ## 目录
 
 ```
-lab-report/
-└── SKILL.md
+.claude-plugin/
+├── marketplace.json     # 插件市场清单
+└── plugin.json          # 插件清单
+skills/
+└── lab-report/
+    └── SKILL.md
 ```
 
 ## License
